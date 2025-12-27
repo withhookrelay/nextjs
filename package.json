@@ -1,0 +1,72 @@
+{
+  "name": "@hookrelay/next",
+  "version": "0.1.0",
+  "description": "Hook Relay SDK for Next.js - Reliable webhook handling for serverless",
+  "author": "Hook Relay <admin@hookrelay.io>",
+  "homepage": "https://hookrelay.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hookrelay/sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hookrelay/sdk/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "next": ">=13.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "~2.1.0",
+    "eslint": "^9.17.0",
+    "next": "^15.1.3",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vitest": "~2.1.0"
+  },
+  "keywords": [
+    "webhook",
+    "webhooks",
+    "nextjs",
+    "next.js",
+    "stripe",
+    "github",
+    "shopify",
+    "vercel",
+    "serverless",
+    "idempotent",
+    "retry",
+    "queue",
+    "reliable"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
