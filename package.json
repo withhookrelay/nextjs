@@ -1,5 +1,5 @@
 {
-  "name": "@hookrelay/next",
+  "name": "@hookrelay/nextjs",
   "version": "0.1.0",
   "description": "Hook Relay SDK for Next.js - Reliable webhook handling for serverless",
   "author": "Hook Relay <admin@hookrelay.io>",
